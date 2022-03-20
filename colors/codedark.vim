@@ -275,6 +275,8 @@ call <sid>hi('TSType', s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('TSTypeBuiltin', s:cdBlue, {}, 'none', {})
 call <sid>hi('TSStructure', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('TSInclude', s:cdPink, {}, 'none', {})
+call <sid>hi('TSKeywordReturn', s:cdPink, {}, 'none', {})
+call <sid>hi('TSUsingDeclaration', s:cdPink, {}, 'none', {})
 " Variable
 call <sid>hi('TSVariable', s:cdLightBlue, {}, 'none', {})
 call <sid>hi('TSVariableBuiltin', s:cdLightBlue, {}, 'none', {})
@@ -580,7 +582,7 @@ call <sid>hi('ClassTemplatePartialSpecialization', s:cdBlueGreen, {}, 'none', {}
 call <sid>hi('FunctionTemplate', s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('TemplateRef', s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('TemplateTemplateParameter', s:cdBlueGreen, {}, 'none', {})
-call <sid>hi('UsingDeclaration', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('UsingDeclaration', s:cdPink, {}, 'none', {})
 call <sid>hi('MemberRef', s:cdLightBlue, {}, 'italic', {})
 call <sid>hi('MemberRefExpr', s:cdYellow, {}, 'italic', {})
 call <sid>hi('Namespace', s:cdSilver, {}, 'none', {})
@@ -595,6 +597,10 @@ call <sid>hi('LspCxxHlSymTypeAlias', s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('LspCxxHlSymTypeParameter', s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('LspCxxHlSymConcept', s:cdBlueGreen, {}, 'italic', {})
 call <sid>hi('LspCxxHlSymNamespace', s:cdSilver, {}, 'none', {})
+
+call <sid>hi('TSReferenceDeclarator', s:cdBlue, {}, 'none', {})
+call <sid>hi('TSPointerDeclarator', s:cdBlue, {}, 'none', {})
+call <sid>hi('TSOperatorInsertion', s:cdYellow, {}, 'none', {})
 
 " Coc Explorer:
 call <sid>hi('CocHighlightText', {}, s:cdSelection, 'none', {})
