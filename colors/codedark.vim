@@ -93,10 +93,11 @@ let s:cdSelection = {'gui': '#264F78', 'cterm': s:cterm03, 'cterm256': '24'}
 let s:cdLineNumber = {'gui': '#5A5A5A', 'cterm': s:cterm04, 'cterm256': '240'}
 
 let s:cdDiffRedDark = {'gui': '#4B1818', 'cterm': s:cterm08, 'cterm256': '52'}
-let s:cdDiffRedLight = {'gui': '#6F1313', 'cterm': s:cterm08, 'cterm256': '52'}
+let s:cdDiffRedLight = {'gui': '#94151b', 'cterm': s:cterm08, 'cterm256': '52'}
 let s:cdDiffRedLightLight = {'gui': '#FB0101', 'cterm': s:cterm08, 'cterm256': '09'}
 let s:cdDiffGreenDark = {'gui': '#373D29', 'cterm': s:cterm0B, 'cterm256': '237'}
-let s:cdDiffGreenLight = {'gui': '#4B5632', 'cterm': s:cterm09, 'cterm256': '58'}
+let s:cdDiffGreenLight = {'gui': '#587c0c', 'cterm': s:cterm09, 'cterm256': '58'}
+let s:cdDiffBlueLight = {'gui': '#0c7d9d', 'cterm': s:cterm09, 'cterm256': '36'}
 
 let s:cdSearchCurrent = {'gui': '#4B5632', 'cterm': s:cterm09, 'cterm256': '58'} 
 let s:cdSearch = {'gui': '#264F78', 'cterm': s:cterm03, 'cterm256': '24'}
@@ -140,9 +141,9 @@ call <sid>hi('Cursor', s:cdCursorDark, s:cdCursorLight, 'none', {})
 call <sid>hi('CursorLine', {}, s:cdCursorDarkDark, 'none', {})
 call <sid>hi('CursorColumn', {}, s:cdCursorDarkDark, 'none', {})
 call <sid>hi('Directory', s:cdBlue, s:cdBack, 'none', {})
-call <sid>hi('DiffAdd', {}, s:cdDiffGreenLight, 'none', {})
-call <sid>hi('DiffChange', {}, s:cdDiffRedDark, 'none', {})
-call <sid>hi('DiffDelete', {}, s:cdDiffRedLight, 'none', {})
+call <sid>hi('DiffAdd', s:cdDiffBlueLight, s:cdBack, 'none', {})
+call <sid>hi('DiffChange', s:cdDiffBlueLight, s:cdBack, 'none', {})
+call <sid>hi('DiffDelete', s:cdDiffRedLight, s:cdBack, 'none', {})
 call <sid>hi('DiffText', {}, s:cdDiffRedLight, 'none', {})
 call <sid>hi('EndOfBuffer', s:cdLineNumber, s:cdBack, 'none', {})
 call <sid>hi('ErrorMsg', s:cdRed, s:cdBack, 'none', {})
